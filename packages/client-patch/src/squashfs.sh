@@ -38,6 +38,8 @@ if [ "$MODEL" = "OH2P" ]; then
     IMAGE_MAX_SIZE=$((0x02800000))
 elif [ "$MODEL" = "LX06" ]; then
     IMAGE_MAX_SIZE=$((0x02800000))
+elif [ "$MODEL" = "L06A" ]; then
+    IMAGE_MAX_SIZE=$((0x02800000))
 fi
 
 SIZE=$(stat -L -c %s "$FIRMWARE/root-patched.squashfs")
